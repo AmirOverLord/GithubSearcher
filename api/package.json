@@ -4,14 +4,17 @@
   "description": "Github Searcher API",
   "main": "server.ts",
   "scripts": {
-  "start": "ts-node ./src/server.ts",
-  "start:prod": "npm run build && node ./dist/src/server.js",
-  "build": "npx tsc"
+    "start": "ts-node ./src/server.ts",
+    "start:prod": "npm run build && node ./dist/src/server.js",
+    "build": "npx tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "redis": "^4.0.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
