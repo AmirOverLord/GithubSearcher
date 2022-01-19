@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Github Searcher API",
+  "main": "server.ts",
+  "scripts": {
+  "start": "ts-node ./src/server.ts",
+  "start:prod": "npm run build && node ./dist/src/server.js",
+  "build": "npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
