@@ -1,7 +1,6 @@
 import express from 'express';
 import { Request, Response } from 'express';
 import bodyParser from 'body-parser';
-import redis from "redis";
 import routes from './routes';
 
 const app = express();

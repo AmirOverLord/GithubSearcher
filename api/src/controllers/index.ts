@@ -1,4 +1,5 @@
 import axios from "axios";
+import { setCahce, resetCache } from "../utils"
 
 /** Fetch data from github api by user id or repo **/
 const Search = async (req: any, res: any) => {
@@ -16,7 +17,11 @@ const Search = async (req: any, res: any) => {
         const response = await axios.get(url);
         const data = await response.data;
 
-        res.send(data);
+        // cache the data for the next 2 hours
+        setCahce(value, data);
+
+        // send response back to the user
+        res.json({ data: data });
 
     } catch (error) {
         console.error(error);
@@ -25,6 +30,12 @@ const Search = async (req: any, res: any) => {
 }
 
 /** Clear memory cache **/
-const ClearCache = (req: any, res: any) => {}
+const ClearCache = (req: any, res: any) => {
+    // clear the cashe
+    resetCache();
+
+    // response back to the user
+    res.json({message: "Cache cleared!."})
+}
 
 export { Search, ClearCache }
