@@ -5,8 +5,8 @@ const SearchInput = () => {
     <div className="search-component">
       <input />
       <select name="list" id="list">
-        <option value="users">Users</option>
-        <option value="repos">Repos</option>
+        <option value="user">Users</option>
+        <option value="repo">Repository</option>
       </select>
     </div>
   );
