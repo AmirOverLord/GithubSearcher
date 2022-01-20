@@ -4,7 +4,9 @@ import RepositoryCard from "./RepositoryCard";
 
 const ResultList = () => {
   return (
-    <div>
+    <div className="result-list">
+      <UserCard />
+      <UserCard />
       <UserCard />
     </div>
   );

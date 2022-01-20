@@ -6,7 +6,7 @@ const SearchInput = () => {
       <input />
       <select name="list" id="list">
         <option value="user">Users</option>
-        <option value="repo">Repository</option>
+        <option value="repositories">Repository</option>
       </select>
     </div>
   );
