@@ -1,3 +1,3 @@
-import { setCahce, getCahce, resetCache } from "./cache"
+import { setCahce, getCahce, resetCache, isExists } from "./cache"
 
-export { setCahce, getCahce, resetCache }
+export { setCahce, getCahce, resetCache, isExists }

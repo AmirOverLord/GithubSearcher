@@ -9,4 +9,4 @@ routes.get("/search", cacheMiddleware, Search);
 
 routes.get("/clear-cache", ClearCache);
 
-export default routes
+export default routes 
